@@ -35,15 +35,15 @@ The `db` service runs a MySQL instance used by WordPress for storing content.
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/yourusername/your-repo.git
-   cd your-repo
+   git clone (https://github.com/roshank8s/docker-wordpress.git
+   cd docker-wordpress
 2. **Update Configuration**
 
 Update the docker-compose.yml file with your domain names and email addresses. Replace www.example.com and example@gmail.com with your own domain and email address.
 
 3. **Start the Services**
 
-docker-compose up -d
+`docker-compose up -d`
 
 This command starts the services in detached mode.
 
@@ -55,7 +55,7 @@ Navigate to https://www.example.com in your web browser. You should see the Word
 
 To stop the services, run:
 
-docker-compose down
+`docker-compose down`
 
 This command stops and removes the containers but retains your data.
 
@@ -73,6 +73,7 @@ The Let's Encrypt certificates are automatically renewed every 90 days.
 
 If you encounter issues, check the logs of each service for troubleshooting:
 
+```sh
 docker-compose logs nginx-proxy
 docker-compose logs letsencrypt
 docker-compose logs wordpress
